@@ -45,6 +45,9 @@ app.all('*', (req, res) => {
     }
   }
   res.json(echo);
+  console.log('-------------------------');
+  console.log(echo);
+  console.log('-------------------------');
 });
 
 const server = app.listen(process.env.PORT || 80);
